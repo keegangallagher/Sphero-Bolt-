@@ -1,0 +1,8 @@
+async function startProgram() {
+	// Programmer: Keegan Gallagher
+	// Program: Sphero Bolt
+	// Date: 5.25.23
+	// ID: SB-52F
+     await roll(360, 200, 1);
+}
+
