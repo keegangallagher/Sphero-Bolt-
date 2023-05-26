@@ -4,17 +4,21 @@ async function startProgram() {
 	// Program: Competition
 	// Date: 5.26.23
 	// ID: SB-52F
-	 await scrollMatrixText('Start!', { r: 66, g: 56, b: 255 }, 30, true);
 	 await scrollMatrixText('Start!', {r:66, g:56, b:255}, 30, true);
 	 setMainLed({ r: 4, g: 200, b: 2 });
-     await roll(0, 50, 3.1);
+     	 await roll(0, 50, 3.1);
 	 await delay(2)
 	 setMainLed({ r: 0, g: 0, b: 225 });
 	 await delay(1)
 	 await roll(90, 50, 2);
 	 await delay(2);
 	 await speak('Hello World!', true);
-	 await delay(3)
+	 await delay(1)
+	 await roll(180, 50, 1.5);
+	 await delay(1);
+	 await roll(200, 50, 2);
+	 await delay(1)
+	 setMainLed({ r: 255, g: 0, b: 0 });
 }
 
 
