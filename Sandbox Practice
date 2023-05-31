@@ -4,7 +4,7 @@ async function startProgram() {
 	// Program: Competition
 	// Date: 5.26.23
 	// ID: SB-52F
-	 await scrollMatrixText('Start!', {r:66, g:56, b:255}, 30, true);
+await scrollMatrixText('Start!', {r:66, g:56, b:255}, 30, true);
 	 setMainLed({ r: 4, g: 200, b: 2 });
      await roll(0, 50, 3.4);
 	 await delay(2)
@@ -33,6 +33,12 @@ async function startProgram() {
 	 await roll(90, 50, 1.1);
 	 await delay(1);
 	 setMainLed({ r: 4, g: 200, b: 2 });
+	 await delay(1);
+	 await roll(0, 50, 1.2);
+	 await delay(1);
+	 await roll(310, 50, 1.2);
+     await delay(1);
+	 await Sound.Animal.Monkey.play(true);
 }
 
 
